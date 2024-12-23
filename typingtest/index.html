@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Speed Test</title>
+  <link rel="stylesheet" href="f2.css">
+</head>
+<body>
+     <div class="main">
+        <header class="boss">
+            <!-- <div class="toggle-container">
+                <input type="checkbox" id="modeToggle" />
+               <label for="modeToggle" class="toggle-label">
+                  <span class="toggle-circle"></span>
+               </label>
+            </div> -->
+
+
+            <div class="toggle-container">
+                <input type="checkbox" id="modeToggle" />
+                <label for="modeToggle" class="toggle-label">
+                  <span class="toggle-circle"></span>
+                </label>
+              </div>
+              
+         </header>
+  <div class="container">
+    <header>
+      <h1>Typing Speed Test</h1>
+    </header>
+    <main>
+      <div id="settings">
+        <label for="timer">Test Duration:</label>
+        <select id="timer">
+          <option value="1">1 Minute</option>
+          <option value="3">3 Minutes</option>
+          <option value="5">5 Minutes</option>
+        </select>
+        <button id="startButton">Start Test</button>
+      </div>
+      <div id="test" class="hidden">
+        <p id="displayText">The quick brown fox jumps over the lazy dog.</p>
+        <textarea id="inputText" placeholder="Start typing here..." disabled></textarea>
+        <div id="stats">
+          <p>Time Left: <span id="timeLeft">0:00</span></p>
+          <p>WPM: <span id="wpm">0</span></p>
+          <p>Accuracy: <span id="accuracy">0%</span></p>
+        </div>
+      </div>
+      <div id="results" class="hidden">
+        <h2>Test Results</h2>
+        <p>WPM: <span id="finalWpm">0</span></p>
+        <p>Accuracy: <span id="finalAccuracy">0%</span></p>
+        <button id="retryButton">Retry</button>
+      </div>
+    </main>
+  </div>
+  <script src="f2.js"></script>
+</div>
+</body>
+</html>

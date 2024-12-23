@@ -1,0 +1,93 @@
+/* Base styling */
+body {
+    font-family: 'Arial', sans-serif;
+    /* background: linear-gradient(135deg, #1a4beb, #4e02db); */
+    /* background: linear-gradient(#90f6d7, #35bcbf, #41506b, #263849); */
+    /* background: linear-gradient(#dbd8e3, #5c5470, #352f44); */
+    background: linear-gradient(#1d1716, #402a23, #a55233, #f3bc77);
+    color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  h1, h2 {
+    color: #ffd700;
+    text-shadow: 2px 2px #000;
+  }
+  
+  /* Home Page */
+  .home-page {
+    text-align: center;
+  }
+  
+  /* Typing Test Page */
+  .typing-page {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  #displayText {
+    margin: 20px 0;
+    padding: 10px;
+    background: linear-gradient(90deg, #4e02db, #680cd1);
+    border: 1px solid #680cd1;
+    border-radius: 5px;
+    color: #fff;
+  }
+  
+  #inputText {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #1ad4f5;
+    border-radius: 5px;
+    resize: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+  ::placeholder{
+    color: white;
+  }
+  
+#startButton :hover {
+     background-color: #000;
+  }
+  #stats {
+    margin-top: 10px;
+    color: #ffd700;
+    font-weight: bold;
+  }
+  
+  /* Result Page */
+  .result-page {
+    text-align: center;
+  }
+  
+  /* Hidden class */
+  .hidden {
+    display: none;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .home-page, .typing-page, .result-page {
+      width: 90%;
+    }
+  }
+  
+  /* Keyframe Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
